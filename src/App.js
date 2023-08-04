@@ -7,9 +7,8 @@ import News from './Components/News';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = (props) => {
-  let {apiKey,pageSize}= props
-  pageSize = 9
-  apiKey = process.env.REACT_APP_NEW_API_KEY
+  const pageSize = 9
+  const apiKey = process.env.REACT_APP_NEW_API_KEY
   return (
     <Router>
       <div>
